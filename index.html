@@ -1,25 +1,21 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="calendar">
-        <div class="header">
-            <button id="prevMonth">&lt;</button>
-            <h2 id="monthYear"></h2>
-            <button id="nextMonth">&gt;</button>
-        </div>
-        <div class="weekdays">
-            <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
-        </div>
-        <div id="days" class="days"></div>
+<div class="calendar">
+    <div class="header">
+        <button id="prevMonth">&lt;</button>
+        <h2 id="monthYear"></h2>
+        <button id="nextMonth">&gt;</button>
     </div>
+    <div class="weekdays">
+        <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+    </div>
+    <div id="days" class="days"></div>
+</div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+<!-- Event Modal -->
+<div id="eventModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Add Event</h2>
+        <input type="text" id="eventTitle" placeholder="Event Title">
+        <button id="saveEvent">Save</button>
+    </div>
+</div>
