@@ -1,20 +1,40 @@
-.modal {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.calendar {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
 }
-.modal-content {
+
+.header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
-.close {
+
+.weekdays, .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day, .empty {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.day {
+    background: #d3d3d3;
     cursor: pointer;
-    font-size: 20px;
-    align-self: flex-end;
 }
